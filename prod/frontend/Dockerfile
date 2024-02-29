@@ -3,7 +3,7 @@ FROM node:buster AS frontend-builder
 
 RUN apt update && apt install git
 
-RUN git clone https://github.com/yeti-platform/yeti-feeds-frontend.git /app
+RUN git clone https://github.com/jax7sec/yeti-feeds-frontend.git /app
 WORKDIR /app
 
 RUN npm install
