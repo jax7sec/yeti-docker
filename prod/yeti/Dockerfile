@@ -8,7 +8,8 @@ RUN apt-get update && apt-get install -y \
     git \
     && apt-get clean && rm -rf /var/cache/apt/* /var/lib/apt/lists/*
 
-RUN git clone https://github.com/jax7sec/yeti.git /app
+# RUN git clone https://github.com/jax7sec/yeti.git /app
+RUN git clone git@github.com:jax7sec/yeti.git /app
 WORKDIR /app
 RUN cp yeti.conf.sample yeti.conf
 RUN cp ./extras/docker/docker-entrypoint.sh /docker-entrypoint.sh
