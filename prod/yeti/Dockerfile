@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN git clone https://github.com/jax7sec/yeti.git /app
 WORKDIR /app
-RUN cp yeti.conf.sample yeti.conf
+#RUN cp yeti.conf.sample yeti.conf
 RUN cp ./extras/docker/docker-entrypoint.sh /docker-entrypoint.sh
 
 # Upgrade pip
